@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./Header";
-import ThreadsList from "./ThreadsList";
+import Header from "./components/Header";
+import ThreadsList from "./components/ThreadsList";
 import './index.css';
 
 function App() {
