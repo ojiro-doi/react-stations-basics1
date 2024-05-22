@@ -1,14 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React from "react";
-import Header from "./components/Header";
-import ThreadsList from "./components/ThreadsList";
+import Home from "./pages/Home";
+import CreateThreadsPage from "./pages/CreateThreadsPage";
 import './index.css';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <ThreadsList />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path={`/`} element={<Home/>}/>
+        <Route path={`/CreateThreadsPage`} element={<CreateThreadsPage/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

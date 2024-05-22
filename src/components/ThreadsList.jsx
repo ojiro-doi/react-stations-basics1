@@ -14,7 +14,7 @@ const ThreadsList = () => {
         setThreads(data);
       })
       .catch((error) => {
-        console.log('error');
+        console.log('error', error);
       });
   };
 
@@ -23,7 +23,7 @@ const ThreadsList = () => {
   }, []);
 
   return (
-    <div className="container flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <h1 className="p-6 text-2xl font-bold">新着スレッド</h1>
       <table className="">
         {threads.map((thread) => (
